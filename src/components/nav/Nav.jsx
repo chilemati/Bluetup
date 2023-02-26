@@ -59,7 +59,7 @@ const Navv = () => {
         {
             nav.map(item=> {
                 return (
-                <Card key={item.id} className={'d-none d-md-flex'}>
+                <Card key={item.id} className={'d-none d-md-flex nav-card'}>
                     <Link to={!item.body?item.href:'#'}>
                     <Card.Header onClick={(e)=> handleActive(item.id)} 
                     className={item.active} id='inline' >

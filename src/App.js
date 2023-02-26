@@ -17,10 +17,10 @@ const App = () => {
   return (
 	<Container fluid className='mx-0 px-0 app'>
 		<Row>
-			<Col sm={4} md={3} className='mx-0 px-0' >
+			<Col  xs={12} md={4}  lg={3} className='mx-0 px-0 nav-width' >
 		<OffcanvasExample />
 			</Col>
-			<Col sm={8} md={9} className='mx-0 px-0'>
+			<Col  xs={12} md={8} lg={9} className='mx-0 px-0'>
 				<Routes>
 					<Route path='/' element={<Dashbaord />} />
 					<Route path='/all' element={<All />} />

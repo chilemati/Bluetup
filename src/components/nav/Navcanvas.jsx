@@ -11,10 +11,10 @@ import { navList } from './navList';
 import {svgs} from './svgIcons'
 function OffcanvasExample() {
   return (
-    <>
+    <Container fluid className='px-0 mx-0'>
       {[false,].map((expand) => (
-        <Navbar key={expand} collapseOnSelect  expand={expand} className="mx-0 nav1 text-light ">
-          <Container fluid className=''>
+        <Navbar key={expand} collapseOnSelect  expand={expand} className="mx-0 px-0 nav1 text-light ">
+          {/* <Container fluid className=''> */}
             <Navbar.Brand href="#" className='text-light logo-box'>
              <span className='logo'> {svgs.logo}</span> 
               <span>Bluetup.</span>
@@ -41,12 +41,14 @@ function OffcanvasExample() {
                     navList.map(item=> {
                       return (
                         <Nav key={item.id}>
-                           {!item.body && <Nav.Link href={`#${item.href}`}>
-                            <Link to={item.href}>
+                           {!item.body && 
+                           <Nav.Link href={`#${item.href}`}>
+                            <Link to={item.href} >
                               <span className="me-3">{item.icon1}</span>
                             {item.text}
                             </Link>
-                            </Nav.Link>}
+                             </Nav.Link>
+                          }
                            {
                              
                              item.body &&
@@ -81,10 +83,10 @@ function OffcanvasExample() {
               </Offcanvas.Body>
             </Navbar.Offcanvas>
               <Navv />
-          </Container>
+          {/* </Container> */}
         </Navbar>
       ))}
-    </>
+    </Container>
   );
 }
 
