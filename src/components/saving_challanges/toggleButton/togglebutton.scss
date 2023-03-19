@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@mixin image($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin flex() {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.toggle{
+    width: 56px;
+    height: 28px;
+    border: 1px solid #0D833C;
+    border-radius: 20px;
+    @include flex();
+    padding: 3px;
+    outline: none;
+    background-color: white;
+    .cir{
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: #0D833C;
+        // translate: 20px;
+    }
+}

@@ -1,0 +1,302 @@
+@mixin flex() {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+            
+                .Advancefilter-diag{
+                    width: 500px;
+                    height: 460px;
+                    background: #FFFFFF;
+                    border: 1px solid #7D85AC;
+                    border-radius: 5px;
+                    margin-top: 5vh;
+                    padding: 20px;
+                    .row11{
+                        @include flex();
+                        justify-content: start;
+                        padding-left: 20px;
+                        padding-top: 20px;
+                        border-bottom: 2px solid #172774;
+                       width: inherit;
+                        h1{
+                            font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 1.125rem;
+                            line-height: 22px;
+                            color: #172774;
+                            padding-bottom: 15px;
+                        }
+                    }
+                    .forms-row1,.forms-row2,.forms-row3{
+                        margin-top: 12px;
+                        @include flex();
+                        justify-content: space-between;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        label{
+                            font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: #172774;
+                            margin-bottom: 10px;
+                        }
+                        .selectRole{
+                               width: 191px;
+                                height: 32px;
+                                .css-b62m3t-container{
+                                    border-radius: 5px;
+                                    border: 1px solid #C6C9D5;
+                                    box-shadow: none;
+                                }
+                            }
+                                .css-1dimb5e-singleValue{
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 0.75rem;
+                                    line-height: 14px;
+                                    color: #7D85AC;
+
+                                }
+                                [class $="menu"]{
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    color: #303972;
+                                }
+                                
+                            
+                    }
+                    .forms-row4{
+                        margin-top: 24px;
+                        border-bottom: 2px solid #172774;
+                        .row4-boxa,.row4-boxb{
+                            font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 0.75rem;
+                            line-height: 14px;
+                            color: #000000;
+                            margin-bottom: 21px;
+                            margin-left: 20px;
+                        }
+                    }
+
+                    .btns{
+                            // height: 7.5vh;
+                            background-color: #FFFFFF;
+                            @include flex();
+                            justify-content: space-between;
+                            // border-top: 2px solid #172774;
+                            margin-top: 2.3vh;
+                            .filter{
+                            width: 78px;
+                            height: 32px;
+                            background: #172774;
+                            border-radius: 5px;
+                            font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 14px;
+                            display: flex;
+                            align-items: center;
+                            align-content: center;
+                            justify-content: center;
+                            color: #FFFFFF;
+                            margin-left: 20px;
+                            outline: none;
+                            border: none;
+                            }
+                            .reset{
+                                font-family: 'Lato';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 12px;
+                                line-height: 14px;
+                                @include flex();
+                                justify-content: center;
+                                color: #D9261C;
+                                margin-right: 20px;
+                                outline: none;
+                                border: none;
+                                background-color: inherit;
+                            }
+                        }
+                   
+                }
+            
+//? **************************** REACT DATEPICKER *******************************
+.boxOne{
+    outline: none;
+    border: none;
+    @include flex();
+    justify-content: center;
+    gap: 2rem;
+    .monthSelect{
+         outline:none; /* remove focus ring from Webkit */
+    line-height: 1.2;
+    
+    }
+    :last-child{
+        width: 60px !important;
+        // border: 1px solid red !important;
+    }
+}
+
+.react-datepicker__input-container{
+    // border: 1px solid red;
+    width: 191px;
+    height: 40px;
+    border: 1px solid #C6C9D5;
+    border-radius: 5px;
+    @include flex();
+    justify-content: center;
+    overflow: hidden;
+    input{
+        background-image: url('../chevron-down.svg');
+        background-repeat: no-repeat;
+        background-position: 10rem center;
+        padding-left: 14px;
+        outline: none;
+        // border: 1px solid green;
+        border: none;
+        box-shadow: none;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.75rem;
+        line-height: 14px;
+        color: #7D85AC;
+    }
+}
+
+.react-datepicker-popper{
+    // width: 393px;
+    height: 36.7vh;
+    border: none;
+}
+.react-datepicker{
+    // background-color: green !important;
+    width: 393px;
+    background: #FFFFFF !important;
+    // border: 1px solid #C6C9D5 !important;
+    // border-radius: 9px !important;
+    .react-datepicker__triangle{
+        display: none;
+    }
+    .react-datepicker__month-container{
+        width: inherit;
+        height: inherit;
+        // border: 1px solid red;
+        border: none !important;
+        .react-datepicker__header{
+            // background-color: green !important;
+            border: none !important;
+            height: 12vh;
+            background-color: #FFFFFF;
+            padding: 0px 34px;
+            padding-top: 23px;
+            select{
+                outline: none;
+                border: none;
+                // width: 100px;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                appearance: none;
+                width: 100px;
+                height: max-content;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.25rem;
+                line-height: 2.4vh;
+                letter-spacing: 0.38px;
+                color: #172774;
+                
+            
+            }
+            .iconToYear{
+                background-image: url('../Vector\ 2.svg');
+                background-repeat: no-repeat;
+                background-position: right center;
+            }
+            button{
+                outline: none;
+                border: none;
+                // width: 6.5px;
+                // height: 14px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.25rem;
+                line-height: 2.4vh;
+                letter-spacing: 0.38px;
+                align-self: center;
+                justify-content: center;
+                background-color: #FFFFFF;
+                :first-child{
+                    margin-right: 2vw;
+                }
+            }
+            .react-datepicker__day-names{
+                // background-color: #303972;
+                @include flex();
+                justify-content: space-between;
+                // border: 1px solid red;
+                gap: 2vw;
+                .react-datepicker__day-name{
+                 font-family: 'Poppins';
+                 font-style: normal;
+                 font-weight: 400;
+                 font-size: 0.75rem;
+                 line-height: 1.6vh;
+                 color: rgba(60, 60, 67, 0.6) !important;
+                 // width: 26px;
+                 margin-top: 2.3vh;
+                 margin-bottom: 2.3vh;
+                 height: 1.6vh;
+                 text-transform: capitalize;
+
+             }
+            }
+            
+        }
+        .react-datepicker__month{
+            width: 100%;
+            // text-align: center !important;
+            .react-datepicker__week{
+                width: 100%;
+                // border:  1px solid green;
+                @include flex();
+                justify-content: center !important;
+                .react-datepicker__day{
+                    @include flex();
+                    justify-content: center !important;
+                   width: 46.43px;
+                    height: 38.29px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #000000;
+                    &:hover {
+                        background-color: #172774 !important;
+                        color: white;
+                    }
+                } 
+                 .react-datepicker__day--outside-month{
+                    color: #808080;
+                 }
+            }
+        }
+    }
+}

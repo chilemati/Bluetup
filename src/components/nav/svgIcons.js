@@ -112,6 +112,9 @@ export const svgs = {
     dropdown: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M19.6321 8.61596L12.5521 16.464C12.2641 16.8 11.7361 16.8 11.4481 16.464L4.36811 8.61596C3.91211 8.11196 4.24811 7.29596 4.92011 7.29596H19.0801C19.7521 7.29596 20.0881 8.11196 19.6321 8.61596Z" fill="#A098AE"/>
     </svg>,
+    dropdownDyn: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19.6321 8.61596L12.5521 16.464C12.2641 16.8 11.7361 16.8 11.4481 16.464L4.36811 8.61596C3.91211 8.11196 4.24811 7.29596 4.92011 7.29596H19.0801C19.7521 7.29596 20.0881 8.11196 19.6321 8.61596Z" fill="currentColor"/>
+    </svg>,
     eclipse: <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="6" cy="6" r="4.5" fill="white" stroke="currentColor" strokeWidth="3"/>
     </svg>,
@@ -130,6 +133,26 @@ export const svgs = {
     </svg>,
     next270:<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M1 0.999999L7 7L13 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
+    </svg>,
+    sortDisc: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11 5H21" stroke="#172774" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M11 9H18" stroke="#172774" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M11 13H15" stroke="#172774" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M3 17L6 20L9 17" stroke="#172774" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M6 18V4" stroke="#172774" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>,
+    gt: <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1.5 1.5L8 8.5L1.5 15.5" stroke="#172774" strokeWidth="2" strokeLinecap="round"/>
+    </svg>,
+    lt: <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 15.5L1.5 8.5L8 1.5" stroke="#172774" strokeWidth="2" strokeLinecap="round"/>
+    </svg>,
+    normalSelectIcon: <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 1.75L6 6.25L10.5 1.75" stroke="#7D85AC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>,
+    eye: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z" stroke="#172774" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#172774" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>,
     
 }

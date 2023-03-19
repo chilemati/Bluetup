@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { svgs } from '../nav/svgIcons'
 import { dashbaordData } from './dashbaordData'
 import SelectIcon from './SelectIcon'
-
+import './dashboard.scss';
 const Dashboard = () => {
 
   return (

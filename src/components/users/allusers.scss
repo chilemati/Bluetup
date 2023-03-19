@@ -1,0 +1,355 @@
+@mixin flex() {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+@mixin image($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+$pri_col: #303972;
+$pri_bg: #FFFFFF;
+
+.all-users{
+    background: #F8F9FB;
+    // border: 1px solid green;
+    // height: 100vh;
+    .row{
+        // padding: 0px !important;
+        margin: 0px !important;
+    }
+    .row1{
+        height: 9vh;
+        // width: 100%;
+        @include flex();
+        justify-content: center;
+        text-align: center;
+        // border: 1px solid red;
+        color: $pri_col;
+        background-color: $pri_bg;
+        h1{
+            text-transform: uppercase;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 2.9vh;
+        }
+    }
+    .parent{
+        // width: 100%;
+        height: 841px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        // margin: auto;
+        margin-top: 3vh;
+        margin-left: 50px;
+        margin-right: 50px;
+                        margin-bottom: 63px;
+
+        .row2{
+            height: 7.2vh;
+            // border: 1px solid red;
+            background-color: $pri_bg;
+            h2{
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                color: $pri_col;
+                margin-top: 1.4vh;
+                margin-left: 3.833vw;
+            }
+        }
+        .row3{
+            height: 9.9vh;
+            // border:  1px solid green;
+            background: #FFFFFF;
+            border-top: 1px solid #7D85AC;
+            padding: 31px;
+            @include flex();
+            justify-content: space-between;
+        
+            .numbers{
+                width: max-content;
+                @include flex();
+                justify-content: start;
+                gap: 10px;
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: #7D85AC;
+                // border: 1px solid red;
+                .css-13cymwt-control{
+                    height: 14px;
+                    // border: 1px solid red;
+                }
+                .css-1fdsijx-ValueContainer{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #303972;
+                    .css-1dimb5e-singleValue{
+                        // color: green;
+                        width: fit-content;
+                    }
+    
+                }
+                .css-1xc3v61-indicatorContainer{
+                    color: #172774;
+    
+                }
+            }
+            .search-box{
+                @include flex();
+                justify-content: center;
+                gap: 5px;
+                // margin-left: 2.33vw;
+                // margin-right: 4.2vw;
+                // border: 1px solid red;
+                label{
+                    margin-right: 10px;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.25rem;
+                    line-height: 22px;
+                    color: #7D85AC;
+                    &:hover{
+                        color: #172774;
+                    }
+                }
+                input{
+                    border: 1px solid #7D85AC;
+                    border-radius: 5px; 
+                    outline: none;
+                    padding-left: 0.5rem;
+                    width: 232.98px;
+                    height: 43px;
+                    :focus{
+                        border: 1px solid #7D85AC;
+    
+                    }
+                }
+            }
+            .filter-users{
+                width: fit-content;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                align-items: center;
+                padding: 5px 25px 5px 10px;
+                gap: 10px;
+                // border: 1px solid red;
+                input{
+                    width: 146px;
+                    height: 42px;
+                    background-image: url('./sort-desc.svg');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: left center;
+                    border: 1px solid #7D85AC;
+                    border-radius: 5px;
+                    outline: none;
+                    cursor: pointer;
+                }
+                label{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    display: flex;
+                    align-items: center;
+                    color: #7D85AC;
+                }
+                    
+                }
+        }
+           
+            .row6{
+                // background-color: #FFFFFF;
+                margin-left: 50px;
+                margin-right: 50px;
+                // margin-top: 101px;
+                // border: 1px solid red;
+                
+                .next{
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    margin-top: 7.1vh;
+                    @include flex();
+                    justify-content: space-between;
+                    .circles{
+                        @include flex();
+                        justify-content: space-between;
+                        gap: 16px;
+                        .icon1{
+                            transform: rotate(90deg);
+                        }
+                        .icon2{
+                            transform: rotate(270deg);
+                        }
+                        .circle{
+                            width: 50px;
+                            height: 50px;
+                            // background: #172774;
+                            box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14);
+                            border-radius: 40px;
+                            // color: white;
+                            @include flex();
+                            justify-content: center;
+                            cursor: pointer;
+                        }
+                    }
+                    .showing{
+                        width: 177.71px;
+                        height: 18.81px;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #A098AE;
+                    }
+                }
+            }
+    }
+}
+
+//? ************************* DATEPICKER ****************************
+
+.rmdp-input{
+    width: 181px;
+    height: 32px;
+    border: 1px solid #C6C9D5;
+    border-radius: 5px;
+    background-image: url('./chevron-down.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    cursor: pointer;
+    padding: 7px;
+}
+
+.rmdp-month-picker{
+    width: 112px;
+    height: 40vh;
+    background: #FFFFFF;
+    /* Shadow */
+
+    box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08), 0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03), 0px 1px 3px rgba(19, 10, 46, 0.13);
+    border-radius: 8px;
+    .rmdp-ym{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: start;
+        gap: 0rem;
+        // background-color: red;
+        .rmdp-day, .rmdp-today{
+            border-radius: 0px;
+        }
+        .rmdp-day{
+            .rmdp-selected{
+            }
+            display: flex;
+            justify-content: center;
+            &:hover{
+                background: #C6C9D5 !important;
+            }
+            span{
+                padding:8px 1rem;
+                border-radius: 0px;
+                &:hover{
+                    font-weight: 600;
+                    background-color: inherit !important;
+                    color: #172774 !important;
+                }
+
+            }
+            // padding: 8px 0px;
+            width: 80px;
+            height: 24px;
+
+            /* 14 | 24 */
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            width: 100%;
+            padding: 0.5rem 0rem;
+            color: #172774;
+            &:hover{
+                border-radius: 0px;
+                color: red;
+            }
+        }
+
+    }
+}
+
+.rmdp-year-picker{
+    width: 68px;
+    height: 40vh;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Shadow */
+
+    box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08), 0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03), 0px 1px 3px rgba(19, 10, 46, 0.13);
+    border-radius: 8px;
+    .rmdp-ym{
+        display: flex;
+        flex-direction: column;
+        .rmdp-day{
+            width: 100%;
+            height: 24px;
+            display: flex;
+            /* 14 | 24 */
+            &:hover{
+                background: #C6C9D5;
+                font-weight: 600;
+            }
+            span{
+                color: #172774 !important;
+                // margin-top: 8px;
+                padding: 8px 0px;
+                border-radius: 0px;
+                &:hover{
+                    background-color: inherit !important;
+                }
+            }
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #172774;
+        }
+        // .rmdp-disabled{
+        //     display: none;
+        //     span{
+
+        //         display: none;
+        //     }
+        // }
+
+    }
+}
+
+
+
+
+//! ***************** DROPDOWN TWO ***********************
+

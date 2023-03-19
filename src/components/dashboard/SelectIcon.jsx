@@ -79,26 +79,4 @@ function SelectIcon() {
 
 export default SelectIcon
 
-// import React, { useState } from 'react';
-// import Select from 'react-select';
-
-// const options = [
-//   { value: 'chocolate', label: 'Chocolate' },
-//   { value: 'strawberry', label: 'Strawberry' },
-//   { value: 'vanilla', label: 'Vanilla' },
-// ];
-
-// export default function SelectIcon() {
-//   const [selectedOption, setSelectedOption] = useState(options[0].label);
-
-//   return (
-//     <div className="dash-select">
-//       <Select
-//         value={{ label: "Select Dept", value: 0 }}
-//         onChange={setSelectedOption}
-//         options={options}
-//       />
-//     </div>
-//   );
-// }
 

@@ -1,0 +1,158 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@mixin image($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin flex() {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.addTransactions{
+    width: 77%;
+    margin: auto;
+    height: 634px;
+    background: #FFFFFF;
+    border: 1px solid #7D85AC;
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 24px 26px;
+    .row1{
+        h1{
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: #303972;
+            margin-bottom: 15px;
+        }
+        .hr{
+            border-bottom: 2px solid #172774;
+        }
+    }
+    .form{
+        margin-top: 21px;
+        .row2{
+            @include flex();
+            justify-content: space-between;
+            gap: 25px;
+            .cell1,.cell2{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                label{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.875rem;
+                    line-height: 14px;
+                    color: #000000;
+                    margin-bottom: 10px;
+                    .star{
+                        color:#D9261C;
+                    }
+                }
+                
+                .css-t3ipsp-control{
+                    box-shadow: none;
+                    outline: none;
+                    padding: 0px;
+                }
+                .css-13cymwt-control {
+                    border: 1px solid #C6C9D5;
+                    border-radius: 5px;
+                    @include flex();
+
+                }
+                .css-1dimb5e-singleValue {
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    line-height: 14px;
+                    color: #7D85AC;
+                }
+
+            }
+            .cell1{
+                input{
+                    border: 1px solid #C6C9D5;
+                    border-radius: 5px;
+                    outline: none;
+                    box-shadow: none;
+                    padding-left: 20px;
+                    height: 37px;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    line-height: 14px;
+                    color: #7D85AC;
+                }
+            }
+        }
+        .b{
+            margin-top: 16px;
+        }
+        .gray{
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 14px;
+            color: #B9BED5;
+            margin-top: 10px;
+        }
+        .btns{
+            margin-top: 49px;
+            margin-bottom: 53px;
+            button{
+                width: 214px;
+                height: 32px;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 0.75rem;
+                line-height: 14px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+            .cancel{
+                background: #D9261C;
+            }
+            .save{
+                background: #0D833C;
+                margin-right: 49px;
+            }
+        }
+        .hr{
+            border-bottom: 1px solid #B9BED5;
+        }
+        .text{
+            margin-top: 37px;
+            p{
+                width: 472px;
+                // height: 98px;
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 14px;
+                color: #000000;
+
+            }
+        }
+    }
+}

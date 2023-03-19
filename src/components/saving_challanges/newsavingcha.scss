@@ -1,0 +1,527 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@mixin image($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin flex() {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.newsavingcha{
+    padding: 26px 24px;
+    width: 77%;
+    height: max-content;
+    background: #FFFFFF;
+    border: 1px solid #7D85AC;
+    border-radius: 5px;
+    margin: auto;
+    // box-shadow: 4px 4px 20px rgb(0, 0, 0,0.5);
+        .title{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 22px;
+        color: #303972;
+    }
+    .hr1{
+        margin-top: 15px;
+        border-bottom: 2px solid #172774;
+    }
+    .line1{
+        @include flex();
+        justify-content: space-between;
+        margin-top: 21px;
+        padding-bottom: 29px;
+        border-bottom: 1px solid #B9BED5;
+        input{
+            width: 340px;
+            height: 32px;
+            background: #FFFFFF;
+            border: 1px solid #7D85AC;
+            border-radius: 5px;
+            outline: none;
+            margin-bottom: 16px;
+            padding-left: 20px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.75rem;
+            line-height: 14px;
+            color: #7D85AC;
+        }
+        label{
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.75rem;
+            line-height: 14px;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+        .star{
+            color: #D9261C;
+        }
+        .cell1{
+            .boxa,.boxb{
+                display: flex;
+                flex-direction: column;
+            }
+            
+        }
+        .cell2{
+            display: flex;
+            flex-direction: column;
+            .textarea{
+                height: 104px;
+                 width: 340px;
+                padding: 10px 17px;
+                display: flex;
+                flex-direction: column;
+                word-wrap: break-word;
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 14px;
+                color: #7D85AC;
+                border: 1px solid #7D85AC;
+                border-radius: 5px;
+                @include image('./elipses.svg');
+                background-position: 98% 98%;
+            }
+        }
+    }
+    .line2{
+        @include flex();
+        justify-content: space-between;
+        gap: 34px;
+        margin-top: 26px;
+        .cell1,.cell2{
+            .boxa,.boxb{
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                align-content: center;
+                margin-bottom: 16px;
+                input{
+                    outline: 0px;
+                    width: 224px;
+                    height: 32px;
+                    border: 1px solid #C6C9D5;
+                    border-radius: 5px;
+                    padding-left: 45px;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    line-height: 14px;
+                    color: #7D85AC;
+
+                }
+                label{
+                    margin-bottom: 10px;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    line-height: 14px;
+                    color: #000000;
+                    .star{
+                        color: #D9261C;
+                    }
+                }
+                .note{
+                    font-family: 'Poppins';
+                    font-style: italic;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #B9BED5;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .cell1{
+            .boxb{
+                .flez{
+                    @include flex();
+                     border: 1px solid #C6C9D5 !important;
+                     border-radius: 5px;
+                     width: 100%;
+                     height: 32px;
+                     input{
+                         width: 35%;
+                         border: none;
+                         height: 30px;
+                         font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.75rem;
+                        line-height: 14px;
+                        color: #7D85AC;
+                        }
+                    .opt{
+                        width: 65%;
+                        
+                        .css-t3ipsp-control{
+                            box-shadow: none;
+                            background:none;
+                            height: 30px;
+                        }
+                         .css-1dimb5e-singleValue{
+                           font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 0.75rem;
+                            // line-height: 14px;
+                            color: #7D85AC;
+                            height: 30px;
+                        // padding-bottom: 1.8vh;
+                        
+
+
+                         }
+                    
+                         .css-b62m3t-container{
+                            width: 100%;
+                         }
+                         .css-13cymwt-control{
+                            background-color: transparent;
+                            height: 30px;
+                            
+                        }
+                        .css-1hb7zxy-IndicatorsContainer{
+                           display: none;
+                        }
+                         .css-qbdosj-Input{
+                            width: 65%;
+                            @include flex();
+                            justify-content: center;
+                         }
+
+                        .css-1fdsijx-ValueContainer{
+                                @include image('./chevron-down.svg');
+                                background-position: 96% center;
+                                background-size: 15%;
+                                font-size: 0.8rem;
+                                height: 20px;
+                                box-shadow: none;
+                                border-left: 2px solid #7D85AC;
+                                width: 100% !important;
+                               
+                            }
+                        
+                    }
+                }
+            }
+
+        }
+        .cell2{
+            .boxb{
+                .inp{
+                     border: 1px solid #7D85AC;
+                     height: 32px;
+                     border-radius: 5px;
+                     padding-left: 35px;
+                }
+                 .css-t3ipsp-control{
+                            box-shadow: none;
+                            background:none;
+                            // height: 20px;
+                        }
+                         .css-1dimb5e-singleValue{
+                           font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 0.75rem;
+                            line-height: 14px;
+                            color: #7D85AC;
+
+                         }
+                    
+                         .css-b62m3t-container{
+                            height: 32px;
+                            @include flex();
+                            justify-content: center;
+                            width: 100%;
+                         }
+                         .css-13cymwt-control{
+                            background-color: transparent;
+                            
+                            
+                        }
+                        .css-1hb7zxy-IndicatorsContainer{
+                           display: none;
+                        }
+                         .css-qbdosj-Input{
+                            width: 100% !important;
+                            @include flex();
+                            justify-content: center;
+                         }
+
+                        .css-1fdsijx-ValueContainer{
+                                @include image('./chevron-down.svg');
+                                background-position: 96% center;
+                                background-size: 15%;
+                                font-size: 0.8rem;
+                                border-radius: 5px;
+                                // height: 20px;
+                                box-shadow: none;
+                                // border: 1px solid #7D85AC;
+                                width: 100% !important;
+                            }
+            }
+        }
+        .cell3{
+            .boxa{
+                // padding: 1px;
+                border-radius: 10px;
+                border-radius: 10px;
+                width: 222px;
+                height: 121px;
+                border: 1px solid #7D85AC;
+                @include flex();
+                justify-content: center;
+                
+            }
+            .img{
+                width: 212px;
+                height: 111px;
+                background: #AFAFAF;
+                border-radius: 10px;
+                @include flex();
+                justify-content: center;
+                span{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: #646464;
+
+                }
+            }
+            .imgSize{
+                margin-top: 7px;
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 14px;
+                color: #000000;
+
+            }
+        }
+    }
+    .line3{
+        @include flex();
+        margin-top: 16px;
+        justify-content: space-between;
+        gap: 34px;
+        .cell1,.cell2,.cell3{
+            .boxa,.boxb,.boxc{
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                align-content: center;
+                margin-bottom: 16px;
+                input{
+                    outline: 0px;
+                    width: 224px;
+                    height: 32px;
+                    border: 1px solid #C6C9D5;
+                    border-radius: 5px;
+                    padding-left: 45px;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    line-height: 14px;
+                    color: #7D85AC;
+
+                }
+                label{
+                    margin-bottom: 10px;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    line-height: 14px;
+                    color: #000000;
+                    .star{
+                        color: #D9261C;
+                    }
+                }
+                .note{
+                    font-family: 'Poppins';
+                    font-style: italic;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #B9BED5;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .inp{
+                     border: 1px solid #7D85AC;
+                     height: 32px;
+                     border-radius: 5px;
+                     padding-left: 35px;
+                }
+                 .css-t3ipsp-control{
+                            box-shadow: none;
+                            background:none;
+                            // height: 20px;
+                        }
+                         .css-1dimb5e-singleValue{
+                           font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 0.75rem;
+                            line-height: 14px;
+                            color: #7D85AC;
+
+                         }
+                    
+                         .css-b62m3t-container{
+                            height: 32px;
+                            @include flex();
+                            justify-content: center;
+                            width: 100%;
+                         }
+                         .css-13cymwt-control{
+                            background-color: transparent;
+                            
+                            
+                        }
+                        .css-1hb7zxy-IndicatorsContainer{
+                           display: none;
+                        }
+                         .css-qbdosj-Input{
+                            width: 100% !important;
+                            @include flex();
+                            justify-content: center;
+                         }
+
+                        .css-1fdsijx-ValueContainer{
+                                @include image('./chevron-down.svg');
+                                background-position: 96% center;
+                                background-size: 15%;
+                                font-size: 0.8rem;
+                                border-radius: 5px;
+                                // height: 20px;
+                                box-shadow: none;
+                                // border: 1px solid #7D85AC;
+                                width: 100% !important;
+                            }
+    }
+    .line4{
+        @include flex();
+        justify-content: space-between;
+        .cell1{
+            display: flex;
+            flex-direction: column;
+             .label{  
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.9rem;
+            line-height: 14px;
+            color: #000000;
+             }
+            .boxa,.boxb,.boxc{
+                font-size: 2.5rem;
+                gap: 14px;
+                margin-bottom: 10px;
+                 @include flex();
+                 .star{
+                    color: #D9261C;
+                 }
+               
+            }
+            
+        }
+        .save{
+           outline: none;
+           border: none;
+           width: 169px;
+            height: 32px;
+            background: #0D833C;
+            border-radius: 5px;
+            color: #FFFFFF;
+        }
+        
+    }
+
+}
+
+
+
+//  .dash-select{
+//         font-size: 0.8rem;
+        
+//         .css-1dimb5e-singleValue{
+//         padding: 0px;
+//         width: 100%;
+//         outline: none;
+//         border: none;
+        
+//     }
+
+//         .css-t3ipsp-control{
+//         box-shadow: none;
+//     }
+
+//     .css-1fdsijx-ValueContainer{
+//             // @include image('./dropdown.svg');
+//             // background-position: 99% center;
+//             // background-size: 20%;
+//             font-size: 0.8rem;
+//             // width: 100%;
+//             // background-color: green;
+//             border: 1px solid #7D85AC;
+//             border-radius: 5px;
+            
+//             width: 100%;
+//             // padding: 0px;
+//             padding-left: 1px;
+//             padding-right: 20px;
+            
+            
+        
+//         }
+//         .css-1hb7zxy-IndicatorsContainer{
+//             display: none;
+
+//         }
+//         .css-qbdosj-Input{
+//             width: 100%;
+//             padding: 0px;
+//             margin: 0px;
+//             outline: none;
+//             :focus{
+//             cursor:none;
+//             }
+            
+//         }
+//         .css-1nmdiq5-menu{
+//             width: 100%;
+//             font-size: 0.6rem;
+//             outline: none;
+//             border: none;
+            
+//         }
+// }  
+                
